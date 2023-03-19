@@ -1,8 +1,8 @@
 :root {
     --color-principal: #179a4a;
     --color-links: yellow;
+    --font-montserratbold: 'Montserrat', sans-serif;
 }
-
 
 header {
     background-color: var(--color-principal);
