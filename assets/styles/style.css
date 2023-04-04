@@ -5,6 +5,22 @@
 --font-geral: inherit, 'Montserrat', sans-serif;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.container-card {
+background-color: var(--color-principal);
+padding: 10px;
+border-radius: 10px;
+height: 100%;
+}
+
+section {
+    padding-bottom: 30px;
+}
+
 ul {
     padding-inline-start: 0px;
 }
@@ -90,13 +106,6 @@ transform: translate3d(100%, 0, 0) !important;
 padding-top: 150px;
 }
 
-div.container-noticias-comamor {
-    background-color: var(--color-principal);
-    padding: 10px;
-    border-radius: 10px;
-    height: 100%;
-}
-
 .titulo {
     padding: 3px 10px;
     border-radius: 15px;
@@ -117,17 +126,34 @@ img.img-noticias-comamor {
     padding: 30px 10px 20px 10px;
 }
 
-div.container-login-controleFrota {
-    background-color: var(--color-principal);
-    padding: 10px;
-    border-radius: 10px;
-    height: 100%;
-}
-
 form.form-login {
     padding: 10px;
 }
 
 #btn-login {
     width: 60%;
+}
+
+#grafico-preco {
+    position: relative; 
+    width: 100%; 
+    height: 0; 
+    padding-top: 56.2500%;
+    padding-bottom: 0; 
+    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+    margin-top: 1.6em; margin-bottom: 0.9em; 
+    overflow: hidden;
+    border-radius: 8px; 
+    will-change: transform;
+}
+
+#img-grafico {
+    padding: 15px;
+    border-radius: 20px;
+    width: 1920px;
+    height: 100%;
+}
+
+#conteudo-preco {
+    padding: 15px;
 }
