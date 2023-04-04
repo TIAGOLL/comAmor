@@ -1,81 +1,133 @@
 :root {
-    --color-principal: #179a4a;
-    --color-links: yellow;
-    --font-montserratbold: 'Montserrat', sans-serif;
+--color-principal: #179a4a;
+--color-links: yellow;
+--color-backtitulo: #c0e0a7;
+--font-geral: inherit, 'Montserrat', sans-serif;
 }
 
-header {
-    background-color: var(--color-principal);
-}
-
-li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-a:link, a:visited{
-    color: var(--color-links);
-}
-
-.liheader {
-    padding-right: 40px;
+ul {
+    padding-inline-start: 0px;
 }
 
 html, body, #home {
-	height: 100%;
-	overflow-x: hidden;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: var(--font-geral);
 }
 
-/*Css botões do header*/
-button {
-    outline: none !important;
-    cursor: pointer !important;
-    border: none !important;
-    padding: 10px 5px !important;
-    margin: 0 !important;
-    font-family: inherit !important;
-    font-size: inherit !important;
-    position: relative !important;
-    display: inline-block !important;
-    letter-spacing: 0.05rem !important;
-    font-weight: 700 !important;
-    font-size: 20px !important;
-    border-radius: 500px !important;;
-    overflow: hidden !important;
-    background: #66ff66 !important;
-    color: ghostwhite !important;
-   }
-   
-   button span {
-    position: relative !important;
-    z-index: 10 !important;
-    transition: color 0.4s !important;
-   }
-   
-   button:hover span {
-    color: black !important;
-   }
-   
-   button::before,
-   button::after {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: 0 !important;
-   }
-   
-   button::before {
-    content: "" !important;
-    background: #179a4a !important;
-    width: 120% !important;
-    left: -10% !important;
-    transform: skew(30deg) !important;
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1) !important;
-   }
-   
-   button:hover::before {
-    transform: translate3d(100%, 0, 0) !important;
-   }
-   
+nav.navbar-header {
+    background-color: var(--color-principal);
+}
+
+li.liheader {
+padding-right: 40px;
+}
+
+li {
+list-style-type: none;
+display: inline-block;
+}
+
+a:link, a:visited{
+color: var(--color-links);
+}
+
+/* Css botões do header/banners */
+.button-nav {
+outline: none !important;
+cursor: pointer !important;
+border: none !important;
+padding: 10px 5px !important;
+margin: 0 !important;
+font-family: inherit !important;
+font-size: inherit !important;
+position: relative !important;
+display: inline-block !important;
+letter-spacing: 0.05rem !important;
+font-weight: 700 !important;
+font-size: 20px !important;
+border-radius: 500px !important;;
+overflow: hidden !important;
+background: #66ff66 !important;
+color: ghostwhite !important;
+}
+
+.button-nav .span-nav {
+position: relative !important;
+z-index: 10 !important;
+transition: color 0.4s !important;
+}
+
+.button-nav:hover .span-nav {
+color: black !important;
+}
+
+.button-nav::before, .button-nav::after {
+position: absolute !important;
+top: 0 !important;
+left: 0 !important;
+width: 100% !important;
+height: 100% !important;
+z-index: 0 !important;
+}
+
+.button-nav::before {
+content: "" !important;
+background: var(--color-principal) !important;
+width: 120% !important;
+left: -10% !important;
+transform: skew(30deg) !important;
+transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1) !important;
+}
+
+.button-nav:hover::before {
+transform: translate3d(100%, 0, 0) !important;
+}
+/* Final Css botões do header/banners */
+
+/* banners top */ 
+.imagem{
+padding-top: 150px;
+}
+
+div.container-noticias-comamor {
+    background-color: var(--color-principal);
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.titulo {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--color-backtitulo);
+    text-align: center;
+    margin: 0px 15%;
+}
+
+div.card {
+    background-color: var(--color-principal);
+    border: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+img.img-noticias-comamor {
+    padding: 30px 10px 20px 10px;
+}
+
+div.container-login-controleFrota {
+    background-color: var(--color-principal);
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+form.form-login {
+    padding: 10px;
+}
+
+#btn-login {
+    width: 60%;
+}

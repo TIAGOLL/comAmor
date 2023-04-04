@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/galeria/faviconCoamo.png" type="image/x-icon">
 
-    <!--Estilo do projeto-->
+    <!-- Estilo do projeto -->
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/normalize.css">
     
     <!--Fonte montserrat luz 300-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,49 +23,53 @@
     <title>ComAmor Agroindustrial Cooperativa</title>
 </head>
 <body>
-    <header class="navbar navbar-expand-md navbar-light fixed-top">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="assets/galeria/logoCoamo.png" alt="Logo Coamo" width="250px">
-            </a>
-            <div class="navbar-collapse colapse" id="nav-principal">
-                    <ul class="ml-auto">
-                        <li class="nav-item liheader">
-                            <button> <span>Preços do dia</span>
-                            </button>
-                        </li>
-                        <li class="nav-item liheader">
-                            <button> <span>Credicoamo</span>
-                            </button>
-                        </li>
-                        <li class="nav-item liheader">
-                            <button> <span>Maquiários</span>
-                            </button>
-                        </li>
-                    </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente navbar-header">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/galeria/logoCoamo.png" alt="Logo Coamo" width="250px">
+                </a>
+                <div class="navbar-collapse colapse" id="nav-principal">
+                        <ul class="ml-auto">
+                            <li class="nav-item liheader">
+                                <button class="button-nav"> <span class="span-nav">Preços do dia</span>
+                                </button>
+                            </li>
+                            <li class="nav-item liheader">
+                                <button class="button-nav"> <span class="span-nav">Credicoamo</span>
+                                </button>
+                            </li>
+                            <li class="nav-item liheader">
+                                <button class="button-nav"> <span class="span-nav">Maquiários</span>
+                                </button>
+                            </li>
+                        </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-
+    <!-- Banners -->
     <section id="home" class="d-flex">
-        <div class="container align-self-center">
-  
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 capa">
                         <div id="carousel-coamo" class="carousel slide" data-ride="carousel">
                             <!--primeiro banner-->
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
+                                <div class="carousel-item active imagem">
                                     <img src="assets/galeria/banner1.png" alt="Banner Novidades da coamo" class="img-fluid" width="1200px" height="500px">
-                                    <button style="position: absolute; left: 500px; bottom: 112px">
-                                        <span>Saiba mais</span>
+                                    <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
+                                        <span class="span-nav">Saiba mais</span>
                                     </button>
                                 </div>
                                 
                                 <!--segundo banner-->
-                                <div class="carousel-item">
+                                <div class="carousel-item imagem">
                                     <img src="assets/galeria/banner2.png" alt="Banner 2" class="img-fluid" width="1200px" height="500px">
+                                    <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
+                                        <span class="span-nav">Saiba mais</span>
+                                    </button>
                                 </div>
                             </div>
                             <a href="#carousel-coamo" class="carousel-control-prev" data-slide="prev">
@@ -78,6 +85,84 @@
             </div>
         </div>
     </section>
+
+    <!-- Notícias ComAmor -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="container-noticias-comamor">
+                            <div class="titulo">
+                                <h4>Notícias ComAmor</h4>
+                            </div>
+                        <div class="row" style="padding: 10px;">
+                            <div class="card col-md-3">
+                                <div>
+                                    <a href="#"><img src="assets/galeria/fundo.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                </div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-3">
+                                <div>
+                                    <a href="#"><img src="assets/galeria/fundo.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                </div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-3">
+                                <div>
+                                    <a href="#"><img src="assets/galeria/fundo.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                </div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-3">
+                                <div>
+                                    <a href="#"><img src="assets/galeria/fundo.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                </div>
+                                <div>
+                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Login para a página do controle da frota -->
+                    <div class="container-login-controleFrota" style="padding: 10px;">
+                        <div class="titulo">
+                            <h4>Login</h4>
+                        </div>
+                        
+                        <div>
+                            <form class="form-login">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label"><h5>Login</h5></label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label"><h5>Senha</h5></label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div style="text-align: center; padding-top: 5px;">
+                                    <input class="btn btn-primary" id="btn-login" type="submit" value="Logar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <!--script carrossel banner-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
