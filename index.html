@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,12 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Normalize -->
     <link rel="stylesheet" type="text/css" href="/assets/styles/normalize.css">
-    
+
     <!--Fonte montserrat luz 300-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +24,7 @@
 
     <title>ComAmor Agroindustrial Cooperativa</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente navbar-header">
@@ -30,20 +33,22 @@
                     <img src="assets/galeria/logoCoamo.png" alt="Logo Coamo" width="250px">
                 </a>
                 <div class="navbar-collapse colapse" id="nav-principal">
-                        <ul class="ml-auto">
-                            <li class="nav-item liheader">
-                                <button class="button-nav"> <span class="span-nav">Preços do dia</span>
-                                </button>
-                            </li>
-                            <li class="nav-item liheader">
-                                <button class="button-nav"> <span class="span-nav">Credicoamo</span>
-                                </button>
-                            </li>
-                            <li class="nav-item liheader">
-                                <button class="button-nav"> <span class="span-nav">Maquinários</span>
-                                </button>
-                            </li>
-                        </ul>
+                    <ul class="ml-auto">
+                        <li class="nav-item liheader">
+                            <button class="button-nav" onclick="desceTela()"> <span class="span-nav">Preços do
+                                    dia</span>
+                            </button>
+                        </li>
+                        <li class="nav-item liheader">
+                            <button class="button-nav" onclick="desceTela2()"> <span class="span-nav">Login</span>
+                            </button>
+                        </li>
+                        <li class="nav-item liheader">
+                            <button class="button-nav" onclick="desceTela3()"> <span class="span-nav">Dia de
+                                    Campo</span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -54,35 +59,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 capa">
-                        <div id="carousel-coamo" class="carousel slide" data-ride="carousel">
-                            <!--primeiro banner-->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active imagem">
-                                    <img src="assets/galeria/banner1.png" alt="Banner Novidades da coamo" class="img-fluid">
-                                    <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
-                                        <span class="span-nav">Saiba mais</span>
-                                    </button>
-                                </div>
-                                
-                                <!--segundo banner-->
-                                <div class="carousel-item imagem">
-                                    <img src="assets/galeria/banner2.png" alt="Banner 2" class="img-fluid">
-                                    <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
-                                        <span class="span-nav">Saiba mais</span>
-                                    </button>
-                                </div>
+                    <div id="carousel-coamo" class="carousel slide" data-ride="carousel">
+                        <!--primeiro banner-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active imagem">
+                                <img src="assets/galeria/banner1.png" alt="Banner Novidades da coamo" class="img-fluid">
+                                <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
+                                    <span class="span-nav">Saiba mais</span>
+                                </button>
                             </div>
-                            <a href="#carousel-coamo" class="carousel-control-prev" data-slide="prev">
-                                <i class="fas fa-angle-left fa-3x"></i>
-                            </a>
 
-                            <a href="#carousel-coamo" class="carousel-control-next" data-slide="next">
-                                <i class="fas fa-angle-right fa-3x"></i>
-                            </a>
-                        </div> 
+                            <!--segundo banner-->
+                            <div class="carousel-item imagem">
+                                <img src="assets/galeria/banner2.png" alt="Banner 2" class="img-fluid">
+                                <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
+                                    <span class="span-nav">Saiba mais</span>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#carousel-coamo" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-left fa-3x"></i>
+                        </a>
+
+                        <a href="#carousel-coamo" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-right fa-3x"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -92,13 +97,14 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="container-card">
-                            <div class="titulo">
-                                <h4>Notícias ComAmor</h4>
-                            </div>
+                        <div class="titulo">
+                            <h4>Notícias ComAmor</h4>
+                        </div>
                         <div class="row" style="padding: 10px;">
                             <div class="card col-md-3">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
+                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
                                 </div>
                                 <div>
                                     <h6>Lorem ipsum dolor sit amet</h6>
@@ -106,7 +112,8 @@
                             </div>
                             <div class="card col-md-3">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
+                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
                                 </div>
                                 <div>
                                     <h6>Lorem ipsum dolor sit amet</h6>
@@ -114,7 +121,8 @@
                             </div>
                             <div class="card col-md-3">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
+                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
                                 </div>
                                 <div>
                                     <h6>Lorem ipsum dolor sit amet</h6>
@@ -122,7 +130,8 @@
                             </div>
                             <div class="card col-md-3">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png" class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
+                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
                                 </div>
                                 <div>
                                     <h6>Lorem ipsum dolor sit amet</h6>
@@ -138,19 +147,26 @@
                         <div class="titulo">
                             <h4>Login</h4>
                         </div>
-                        
+
                         <div>
                             <form class="form-login">
                                 <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label"><h5>Login</h5></label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label for="exampleInputEmail1" class="form-label">
+                                        <h5>Login</h5>
+                                    </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label"><h5>Senha</h5></label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <label for="exampleInputPassword1" class="form-label">
+                                        <h5>Senha</h5>
+                                    </label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <div style="text-align: center; padding-top: 5px;">
-                                    <input class="btn btn-primary" id="btn-login" type="submit" value="Logar">
+                                <div
+                                    style="text-align: center; padding-top: 5px; background-color: rgb(46, 144, 236); border-radius: 2px;">
+                                    <a href="login.html"
+                                        style=" color: black; font: inherit;"><strong>Logar</strong></a>
                                 </div>
                             </form>
                         </div>
@@ -170,10 +186,12 @@
                         <div class="titulo">
                             <h4>Variação do preço</h4>
                         </div>
-                        
+
                         <!-- Imagem gráfico -->
                         <div id="grafico-preco">
-                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFfKJYxltY&#x2F;view?embed"></iframe>
+                            <iframe loading="lazy"
+                                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFfKJYxltY&#x2F;view?embed"></iframe>
                         </div>
                     </div>
                 </div>
@@ -188,12 +206,12 @@
                         <div id="conteudo-preco">
                             <table class="table table-striped table-condensed">
                                 <thead>
-                                  <tr>
-                                      <th class="alinhamento-1">Produto</th>
-                                      <th class="alinhamento-1">Data</th>
-                                      <th class="alinhamento-1">R$</th>
-                                  </tr>
-                                </thead>   
+                                    <tr>
+                                        <th class="alinhamento-1">Produto</th>
+                                        <th class="alinhamento-1">Data</th>
+                                        <th class="alinhamento-1">R$</th>
+                                    </tr>
+                                </thead>
 
                                 <tbody>
                                     <tr>
@@ -201,7 +219,7 @@
                                         <td class="alinhamento-2">04/04/2023 13:33</td>
                                         <td class="alinhamento-1">R$&nbsp;141,00</td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <td class="alinhamento-1">Milho</td>
                                         <td class="alinhamento-2">04/04/2023 13:33</td>
@@ -213,7 +231,7 @@
                                         <td class="alinhamento-2">04/04/2023 13:33</td>
                                         <td class="alinhamento-1">R$&nbsp;84,00</td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <td class="alinhamento-1">Café</td>
                                         <td class="alinhamento-2">04/04/2023 13:33</td>
@@ -226,8 +244,8 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        </div>
+    </section>
     <section>
 
         <div class="container">
@@ -237,8 +255,9 @@
                         <div class="titulo">
                             <h4>Resumo do Último Dia de Campo</h4>
                         </div>
-                        <div >
-                            <img class="img-preto img-fluid" width="1089px" height="2px" src="assets/galeria/fundo-preto.png">
+                        <div>
+                            <img class="img-preto img-fluid" width="1089px" height="2px"
+                                src="assets/galeria/fundo-preto.png">
                         </div>
                     </div>
                 </div>
@@ -247,18 +266,59 @@
     </section>
 
     <footer>
-        <nav>
-            <div style="padding-top: 25px; padding-bottom: 25px; text-align: center;">
-                <nav>Todos os direitos reservados.</nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <nav>
+                        <a href="index.html"><img src="assets/galeria/logoCoamo.png" alt="Logo Coamo"
+                                class="img-fluid"></a>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <ul style="text-align: center; background-color: #179a4a; padding-bottom: 20px; padding-top: 20px;">
+                        <li>
+                            <a href="#" style="color: black;"><img src="assets/galeria/facebook.png"
+                                    style="width: 25px;"><strong>Facebook</strong></a> |
+                        </li>
+                        <li>
+                            <a href="#" style="color: black;"><img src="assets/galeria/instagram.png"
+                                    style="width: 25px;"><strong>Instagram</strong></a> |
+                        </li>
+                        <li>
+                            <a href="#" style="color: black;"><img src="assets/galeria/twitter.png"
+                                    style="width: 25px;"><strong>Twitter</strong></a>
+                        </li>
+                    </ul>
+                    <div style="padding-top: 25px; padding-bottom: 25px; text-align: center; padding-top: 20px;">
+                        <nav><strong>Todos os direitos reservados.</strong></nav>
+                    </div>
+                </div>
             </div>
-        </nav>
     </footer>
 
 
     <!--script carrossel banner-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function desceTela() {
+            window.scrollTo(0, 750)
+        }
+        function desceTela2() {
+            window.scrollTo(0, 400)
+        }
+        function desceTela3() {
+            window.scrollTo(0, 1375)
+        }
+    </script>
 </body>
+
 </html>

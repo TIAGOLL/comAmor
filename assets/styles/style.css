@@ -5,6 +5,10 @@
     --font-geral: inherit, 'Montserrat', sans-serif;
 }
 
+header {
+    padding-bottom: 150px;
+}
+
 table {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -123,9 +127,6 @@ a:visited {
 /* Final Css botões do header/banners */
 
 /* banners top */
-.imagem {
-    padding-top: 150px;
-}
 
 .titulo {
     padding: 3px 10px;
