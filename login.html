@@ -105,22 +105,6 @@
             </div>
     </footer>
 
-    <script>
-        let escreve = document.getElementById('a')
-
-        var x = document.getElementById("demo");
-
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        }
-        else { x.innerHTML = "O seu navegador não suporta Geolocalização."; }
-        function showPosition(position) {
-            escreve.innerHTML = 'Sua localização é:' + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude;
-        }
-
-
-    </script>
 </body>
 
 </html>
