@@ -101,40 +101,31 @@
                             <h4>Notícias ComAmor</h4>
                         </div>
                         <div class="row" style="padding: 10px;">
-                            <div class="card col-md-3">
+                            <div class="card col-md-4">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
-                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/foto-noticiascomamor1.jpg"
+                                            class="img-fluid img-noticias-comamor" style="width: 500px; height: 200px;"></a>
                                 </div>
                                 <div>
-                                    <h6>Lorem ipsum dolor sit amet</h6>
-                                </div>
-                            </div>
-                            <div class="card col-md-3">
-                                <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
-                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
-                                </div>
-                                <div>
-                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                    <a href="#"><h6>Coamo sedia primeiro encontro de Coordenadoras da Comissão Estadual de Mulheres da Faep</h6></a>
                                 </div>
                             </div>
-                            <div class="card col-md-3">
+                            <div class="card col-md-4">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
-                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/foto-noticiascomamor2.jpg"
+                                            class="img-fluid img-noticias-comamor" style="width: 500px; height: 200px;"></a>
                                 </div>
                                 <div>
-                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                    <a href="#"><h6>Dia Nacional da Conservação de Solo</h6></a>
                                 </div>
                             </div>
-                            <div class="card col-md-3">
+                            <div class="card col-md-4">
                                 <div>
-                                    <a href="#"><img src="assets/galeria/fundo-preto.png"
-                                            class="img-fluid img-noticias-comamor" width="200px" height="200px"></a>
+                                    <a href="#"><img src="assets/galeria/foto-noticiascomamor3.jpg"
+                                            class="img-fluid img-noticias-comamor" style="width: 500px; height: 200px;"></a>
                                 </div>
                                 <div>
-                                    <h6>Lorem ipsum dolor sit amet</h6>
+                                    <a href="#"><h6>Encontro das Coordenadoras da Comissão Estadual de Mulheres da FAEP</h6></a>
                                 </div>
                             </div>
                         </div>
@@ -151,22 +142,15 @@
                         <div>
                             <form class="form-login">
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">
-                                        <h5>Login</h5>
-                                    </label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
+                                  <label for="exampleInputEmail1" class="form-label"><h5>Login</h5></label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">
-                                        <h5>Senha</h5>
-                                    </label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                  <label for="exampleInputPassword1" class="form-label"><h5>Senha</h5></label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <div
-                                    style="text-align: center; padding-top: 5px; background-color: rgb(46, 144, 236); border-radius: 2px;">
-                                    <a href="login.html"
-                                        style=" color: black; font: inherit;"><strong>Logar</strong></a>
+                                <div style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
+                                    <input class="btn btn-primary" id="btn-login" onclick="logar()" value="Logar">
                                 </div>
                             </form>
                         </div>
@@ -309,6 +293,7 @@
         crossorigin="anonymous"></script>
 
     <script>
+        //Função para os botões do cabeçalho
         function desceTela() {
             window.scrollTo(0, 750)
         }
@@ -317,6 +302,12 @@
         }
         function desceTela3() {
             window.scrollTo(0, 1375)
+        }
+    </script>
+
+    <script>
+        function logar(){
+            window.location.href = '/telas/login.html'
         }
     </script>
 </body>

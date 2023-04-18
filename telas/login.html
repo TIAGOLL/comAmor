@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/galeria/faviconCoamo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/galeria/faviconCoamo.png" type="image/x-icon">
 
     <!-- Estilo do projeto -->
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Normalize -->
-    <link rel="stylesheet" type="text/css" href="/assets/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/normalize.css">
 
     <!--Fonte montserrat luz 300-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente navbar-header">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    <img src="assets/galeria/logoCoamo.png" alt="Logo Coamo" width="250px">
+                    <img src="../assets/galeria/logoCoamo.png" alt="Logo Coamo" width="250px">
                 </a>
                 <div class="navbar-collapse colapse" id="nav-principal">
                     <ul class="ml-auto">
@@ -62,11 +62,31 @@
                         </div>
                         <div class="row" style="padding: 10px;">
                             <div class="card col-md-12">
-                                <div>
-                                    <img src="assets/galeria/fundo-preto.png" class="img-fluid img-noticias-comamor"
-                                        width="800px" height="2px">
-                                </div>
+                                <div id="cont_49dc45289ca8610367fc06ae4dcb2a53"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/49dc45289ca8610367fc06ae4dcb2a53"></script></div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-card">
+                        <div class="titulo">
+                            <h4>Localizar Encomendas</h4>
+                        </div>
+                        <div>
+                            <label style="padding-top: 20px;"><strong>Qual o número de protocolo de sua encomenda?</strong></label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" style="margin-bottom: 10px; width: 500px;">
+                            <input class="btn btn-primary" id="btn-login" onclick="mostraMapa()" value="Localizar" style="width: 20%;">
+                        </div>
+
+                        <div id="mapaEncomenda" style="padding-top: 20px;">
+
                         </div>
                     </div>
                 </div>
@@ -79,22 +99,22 @@
             <div class="row">
                 <div class="col-md-4">
                     <nav>
-                        <a href="index.html"><img src="assets/galeria/logoCoamo.png" alt="Logo Coamo"
+                        <a href="../index.html"><img src="../assets/galeria/logoCoamo.png" alt="Logo Coamo"
                                 class="img-fluid"></a>
                     </nav>
                 </div>
                 <div class="col-md-4">
                     <ul style="text-align: center; background-color: #179a4a; padding-bottom: 20px; padding-top: 20px;">
                         <li>
-                            <a href="#" style="color: black;"><img src="assets/galeria/facebook.png"
+                            <a href="#" style="color: black;"><img src="../assets/galeria/facebook.png"
                                     style="width: 25px;"><strong>Facebook</strong></a> |
                         </li>
                         <li>
-                            <a href="#" style="color: black;"><img src="assets/galeria/instagram.png"
+                            <a href="#" style="color: black;"><img src="../assets/galeria/instagram.png"
                                     style="width: 25px;"><strong>Instagram</strong></a> |
                         </li>
                         <li>
-                            <a href="#" style="color: black;"><img src="assets/galeria/twitter.png"
+                            <a href="#" style="color: black;"><img src="../assets/galeria/twitter.png"
                                     style="width: 25px;"><strong>Twitter</strong></a>
                         </li>
                     </ul>
@@ -104,6 +124,14 @@
                 </div>
             </div>
     </footer>
+
+<script>
+    function mostraMapa() {
+        let mapa = document.getElementById('mapaEncomenda')
+
+        mapa.innerHTML = '<h6>Sua Encomenda está aqui:</h6><br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.291840145036!2d-51.47092762572324!3d-25.395039931507263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef362de5e5bd35%3A0x81b9e2b502c960d1!2sCorreios!5e0!3m2!1spt-PT!2sbr!4v1681777275449!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    }
+</script>
 
 </body>
 

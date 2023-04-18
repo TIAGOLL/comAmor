@@ -5,6 +5,10 @@
     --font-geral: inherit, 'Montserrat', sans-serif;
 }
 
+p, h5, h6 {
+    color: white !important;
+}
+
 header {
     padding-bottom: 150px;
 }
@@ -187,4 +191,12 @@ form.form-login {
 
 footer{
     background-color: var(--color-principal);
+}
+
+a {
+    text-decoration: None !important;
+}
+
+label {
+    color: white;
 }
