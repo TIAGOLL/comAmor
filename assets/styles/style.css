@@ -5,25 +5,8 @@
     --font-geral: inherit, 'Montserrat', sans-serif;
 }
 
-p, h5, h6 {
-    color: white !important;
-}
-
 header {
     padding-bottom: 150px;
-}
-
-table {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    border-radius: 20px 20px 20px 20px;
-    background-color: white !important;
-}
-
-th,
-td,
-tr {
-    border: none !important;
 }
 
 .alinhamento-1 {

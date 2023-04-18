@@ -22,6 +22,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
+    <style>
+    p, h5, h6 {
+        color: white !important;
+    }
+
+    header {
+        padding-bottom: 150px;
+    }
+
+    table {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 20px 20px 20px 20px;
+        background-color: white !important;
+    }
+
+    th,
+    td,
+    tr {
+        border: none !important;
+    }
+    </style>
+
     <title>ComAmor Agroindustrial Cooperativa</title>
 </head>
 
@@ -90,7 +113,7 @@
         </div>
         </div>
     </section>
-
+    <hr>
     <!-- Notícias ComAmor -->
     <section>
         <div class="container">
@@ -149,7 +172,7 @@
                                   <label for="exampleInputPassword1" class="form-label"><h5>Senha</h5></label>
                                   <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <div style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
+                                <div style="text-align: center; padding-top: 30px; padding-bottom: 30px;">
                                     <input class="btn btn-primary" id="btn-login" onclick="logar()" value="Logar">
                                 </div>
                             </form>
@@ -159,7 +182,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Grafico do preço diário/Informações do preço diário -->
     <section>
         <div class="container">
@@ -241,7 +264,7 @@
                         </div>
                         <div>
                             <img class="img-preto img-fluid" width="1089px" height="2px"
-                                src="assets/galeria/fundo-preto.png">
+                                src="assets/galeria/diadecampo.jpeg"  style="border-radius: 30px; padding: 20px;">
                         </div>
                     </div>
                 </div>
@@ -276,6 +299,15 @@
                     <div style="padding-top: 25px; padding-bottom: 25px; text-align: center; padding-top: 20px;">
                         <nav><strong>Todos os direitos reservados.</strong></nav>
                     </div>
+                </div>
+
+                <div class="col-md-4">
+                    <ol>
+                        <br>
+                        <li><a onclick="desceTela()"><strong>Preço do dia</strong></a></li><br><br>
+                        <li><a onclick="desceTela2()"><strong>Login</strong></a></li><br><br>
+                        <li><a onclick="desceTela3()"><strong>Dia de Campo</strong></a></li><br>
+                    </ol>
                 </div>
             </div>
     </footer>
