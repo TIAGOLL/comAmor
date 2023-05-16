@@ -1,6 +1,6 @@
 :root {
     --color-principal: #179a4a;
-    --color-links: yellow;
+    --color-links: #3b59ff;
     --color-backtitulo: #c0e0a7;
     --font-geral: inherit, 'Montserrat', sans-serif;
 }
@@ -41,6 +41,7 @@ body,
 
 nav.navbar-header {
     background-color: var(--color-principal);
+    
 }
 
 li.liheader {
@@ -53,8 +54,10 @@ li {
 }
 
 a:link,
-a:visited {
-    color: var(--color-links);
+a:visited,
+a:active,
+a:hover {
+    color: var(--color-links) !important;
 }
 
 /* Css botões do header/banners */
@@ -80,7 +83,6 @@ a:visited {
 
 .button-nav .span-nav {
     position: relative !important;
-    z-index: 10 !important;
     transition: color 0.4s !important;
 }
 
@@ -165,14 +167,14 @@ form.form-login {
     padding: 15px;
 }
 
-#img-preto{
+#img-preto {
     padding: 15px;
     border-radius: 20px;
     width: 1920px;
     height: 100%;
 }
 
-footer{
+footer {
     background-color: var(--color-principal);
 }
 
