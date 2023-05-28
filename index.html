@@ -25,32 +25,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
+
+    <!-- Ícones do projeto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- JavaScript -->
     <script src="assets/js/app.js"></script>
-    <style>
-        p,
-        h5,
-        h6 {
-            color: white !important;
-        }
-
-        header {
-            padding-bottom: 150px;
-        }
-
-        table {
-            margin-left: auto !important;
-            margin-right: auto !important;
-            border-radius: 20px 20px 20px 20px;
-            background-color: white !important;
-        }
-
-        th,
-        td,
-        tr {
-            border: none !important;
-        }
-    </style>
 
     <title>ComAmor Agroindustrial Cooperativa</title>
 </head>
@@ -94,17 +74,17 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active imagem">
                                 <img src="assets/galeria/banner1.png" alt="Banner Novidades da coamo" class="img-fluid">
-                                <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
+                                <a class="button-nav" style="position: absolute; left: 500px; bottom: 112px; color: white;" data-scroll-to="login">
                                     <span class="span-nav">Saiba mais</span>
-                                </button>
+                                </a>
                             </div>
 
                             <!--segundo banner-->
                             <div class="carousel-item imagem">
                                 <img src="assets/galeria/banner2.png" alt="Banner 2" class="img-fluid">
-                                <button class="button-nav" style="position: absolute; left: 500px; bottom: 112px">
+                                <a class="button-nav" style="position: absolute; left: 500px; bottom: 112px" href="#">
                                     <span class="span-nav">Saiba mais</span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <a href="#carousel-coamo" class="carousel-control-prev" data-slide="prev">
@@ -127,45 +107,32 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="container-card container-fluid">
-                        <div class="titulo">
-                            <h4>Notícias ComAmor</h4>
-                        </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <div>
-                                    <a href="#"><img src="assets/galeria/foto-noticiascomamor1.jpg"
-                                            class="img-fluid img-noticias-comamor"
-                                            style="width: 500px; height: 200px;"></a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <h6>Coamo sedia primeiro encontro de Coordenadoras da Comissão Estadual de
-                                            Mulheres da Faep</h6>
-                                    </a>
+                                <div class="card">
+                                    <img src="assets/galeria/foto-noticiascomamor1.jpg" alt="Foto do primeiro encontro doa CEMF"
+                                        class="card-img-top" width="220px" height="150px">
+                                    <div class="card-body">
+                                        <h6 class="card-text">Aplicativo Coamo alcança 18 mil cooperados</h6>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="col-md-4">
-                                <div>
-                                    <a href="#"><img src="assets/galeria/foto-noticiascomamor2.jpg"
-                                            class="img-fluid img-noticias-comamor"
-                                            style="width: 500px; height: 200px;"></a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <h6>Dia Nacional da Conservação de Solo</h6>
-                                    </a>
+                                <div class="card">
+                                    <img src="assets/galeria/foto-noticiascomamor2.jpg" alt="Imagem do informativo coamo" class="card-img-top" width="220px" height="150px">
+                                    <div class="card-body">
+                                        <h6 class="card-text">Dia Nacional da Conservação de Solo</h6>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="col-md-4">
-                                <div>
-                                    <a href="#"><img src="assets/galeria/foto-noticiascomamor3.jpg"
-                                            class="img-fluid img-noticias-comamor"
-                                            style="width: 500px; height: 200px;"></a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <h6>Encontro das Coordenadoras da Comissão Estadual de Mulheres da FAEP</h6>
-                                    </a>
+                                <div class="card">
+                                    <img src="assets/galeria/foto-noticiascomamor3.jpg" alt="Imagem do encontro das Coordenadoras da Comissão Estadual de Mulheres da FAEP" width="220px" height="150px" class="card-img-top">
+                                    <div class="card-body">
+                                        <h6 class="card-text">Coamo investe 250 Milhões em armazéns</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -185,17 +152,20 @@
                                     <label>
                                         <h5>Login</h5>
                                     </label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="teste@comamor.com">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="teste@comamor.com">
                                 </div>
                                 <div class="mb-3">
                                     <label>
                                         <h5>Senha</h5>
                                     </label>
-                                    <input type="password" class="form-control"  id="senha" name="senha" placeholder="123">
+                                    <input type="password" class="form-control" id="senha" name="senha"
+                                        placeholder="123">
                                 </div>
                                 <h5 id="output-login"><br></h5>
                                 <div style="text-align: center;">
-                                    <input class="btn btn-primary" id="btn-login" onclick="logar()" value="Logar">
+                                    <input class="btn btn-primary" id="btn-login" onclick="logar()" value="Logar"
+                                        readonly>
                                 </div>
                             </form>
                         </div>
@@ -316,7 +286,7 @@
                                     style="width: 25px;"><strong> Instagram</strong></a> |
                         </li>
                         <li>
-                            <a target="_blank" href="" style="color: white;"><img src="assets/galeria/linkedin.png"
+                            <a target="_blank" href="https://www.linkedin.com/company/coamo-agroindustrial-cooperativa/mycompany/" style="color: white;"><img src="assets/galeria/linkedin.png"
                                     style="width: 25px;"><strong> Linkedin</strong></a>
                         </li>
                     </ul>

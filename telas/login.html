@@ -22,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
+    <!-- Ícones do projeto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- JavaScript -->
     <script src="../assets/js/app.js"></script>
 
@@ -59,36 +62,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="container-card">
-                        <div class="titulo">
-                            <h4>Estatísticas com base em sua região</h4>
-                        </div>
-                        <div class="row" style="padding: 10px;">
-                            <div class="card col-md-12">
-                                <div id="cont_49dc45289ca8610367fc06ae4dcb2a53"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/49dc45289ca8610367fc06ae4dcb2a53"></script></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="container-card">
+                    <div class="container-card align-middle">
                         <div class="titulo">
                             <h4>Localizar Encomendas</h4>
                         </div>
                         <div>
                             <label style="padding-top: 20px;"><strong>Qual o número de protocolo de sua encomenda?</strong></label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" style="margin-bottom: 10px; width: 500px;">
-                            <input class="btn btn-primary" id="btn-login" onclick="mostraMapa()" value="Localizar" style="width: 20%;">
+                            <input id="codEncomenda" name="codEncomenda" type="text" placeholder="CM102030" class="form-control" id="exampleInputPassword1" style="margin-bottom: 10px; width: 500px;">
+                            <input class="btn btn-primary" id="btn-login" onclick="mostraMapa()" value="Localizar" style="width: 20%;" readonly>
                         </div>
 
-                        <div id="mapaEncomenda" style="padding-top: 20px;">
+                        <div id="mapaEncomenda" style="padding-top: 20px; color: white;">
 
                         </div>
                     </div>
@@ -97,7 +81,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer navbar-fixed-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -119,7 +103,7 @@
                                     style="width: 25px;"><strong> Instagram</strong></a> |
                         </li>
                         <li>
-                            <a target="_blank" href="" style="color: white;"><img src="../assets/galeria/linkedin.png"
+                            <a target="_blank" href="https://www.linkedin.com/company/coamo-agroindustrial-cooperativa/mycompany/" style="color: white;"><img src="../assets/galeria/linkedin.png"
                                     style="width: 25px;"><strong> Linkedin</strong></a>
                         </li>
                     </ul>
