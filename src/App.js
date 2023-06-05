@@ -1,8 +1,8 @@
-import './App.css';
-import Header from './assets/components/Header';
-import Login from './assets/components/Login';
-import Footer from './assets/components/Footer';
-import PageInicial from './assets/components/pageInicial';
+import 'bootstrap/dist/css/bootstrap.css';
+import Header from './components/header';
+import Login from './pages/login';
+import Footer from './components/footer';
+import PageInicial from './pages/pageInicial';
 
 function App() {
 

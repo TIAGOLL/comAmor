@@ -1,7 +1,7 @@
-import Logo from '../imagens/logoCoamo.png'
-import logoFacebook from '../imagens/facebook.png'
-import logoInstagram from '../imagens/instagram.png'
-import logoLinkedin from '../imagens/linkedin.png'
+import Logo from '../../assets/imagens/logoCoamo.png'
+import logoFacebook from '../../assets/imagens/facebook.png'
+import logoInstagram from '../../assets/imagens/instagram.png'
+import logoLinkedin from '../../assets/imagens/linkedin.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {

@@ -1,7 +1,6 @@
-import Logo from '../imagens/logoCoamo.png'
+import Logo from '../../assets/imagens/logoCoamo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../App.css'
-import { Button, Input, Nav, Div } from 'reactstrap';
+import { Button, Input, Nav } from 'reactstrap';
 
 function Header() {
     return (
