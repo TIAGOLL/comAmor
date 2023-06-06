@@ -4,16 +4,16 @@ import ContainerCard from '../containerCard';
 
 function CardsNoticias(props) {
     return (
-        <Card>
+        <Card style={{ border: 'none', boxShadow: '1px 1px 10px #3e3f3f' }}>
             <Card.Img src={props.img} width={'220px'} height={'170px'} />
             <Card.Body style={{ padding: '10px' }}>
-                <Card.Title style={{ color: 'white', webkitboxorient: 'vertical', webkitlineclamp: '2', overflow: 'hidden;', textOverflow: 'ellipsis;' }}>
+                <Card.Title style={{ color: 'white', webkitboxorient: 'vertical', webkitlineclamp: '2', overflow: 'hidden;', textOverflow: 'ellipsis', fontSize: '15px'}}>
                     {props.tittle}
                 </Card.Title>
                 <Card.Text>
                     {props.text}
                 </Card.Text>
-                <Button variant="primary" style={{ padding: '5px', fontWeight: '500' }}>
+                <Button variant="success" style={{ padding: '5px', fontWeight: '500' }}>
                     {props.btnText}
                 </Button>
             </Card.Body>

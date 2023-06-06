@@ -3,32 +3,34 @@ import logoFacebook from '../../assets/imagens/facebook.png'
 import logoInstagram from '../../assets/imagens/instagram.png'
 import logoLinkedin from '../../assets/imagens/linkedin.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Imagem } from './../../pages/pageInicial/style';
 
 function Footer() {
     return (
         <footer>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-md-3'>
+            <Container>
+                <Row>
+                    <Col md={3}>
                         <nav>
-                            <a href='index.html'><img src={Logo} alt='Logo Coamo'
-                                class='img-fluid' /></a>
+                            <a href='index.html'><Imagem src={Logo} alt='Logo Coamo'
+                                fluid /></a>
                         </nav>
-                    </div>
-                    <div class='col-md-5'>
+                    </Col>
+                    <Col md={5}>
                         <ul className='ul-media'>
                             <li>
                                 <a target='_blank' href='https://www.facebook.com/coamo.agroindustrial.cooperativa'
-                                    style={{ color: 'white;' }}><img src={logoFacebook}
+                                    style={{ color: 'white;' }}><Imagem src={logoFacebook}
                                         className='logoMedia' /><strong> Facebook</strong></a>
                             </li>
                             <li>
                                 <a target='_blank' href='https://www.instagram.com/coamocooperativa'
-                                    style={{ color: 'white;' }}><img src={logoInstagram}
+                                    style={{ color: 'white;' }}><Imagem src={logoInstagram}
                                         className='logoMedia' /><strong> Instagram</strong></a>
                             </li>
                             <li>
-                                <a target='_blank' href='https://www.linkedin.com/company/coamo-agroindustrial-cooperativa/mycompany/' style={{ color: 'white;' }}><img src={logoLinkedin}
+                                <a target='_blank' href='https://www.linkedin.com/company/coamo-agroindustrial-cooperativa/mycompany/' style={{ color: 'white;' }}><Imagem src={logoLinkedin}
                                     className='logoMedia' /><strong> Linkedin</strong></a>
                             </li>
 
@@ -36,9 +38,9 @@ function Footer() {
                                 <p style={{ color: 'white;', paddingTop: '50px' }}><strong>Todos os direitos reservados.</strong></p>
                             </div>
                         </ul>
-                    </div>
+                    </Col>
 
-                    <div class='col-md-4'>
+                    <Col md={4}>
                         <ol>
                             <br />
                             <li>
@@ -60,9 +62,9 @@ function Footer() {
 
                             <br />
                         </ol>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     )
 }

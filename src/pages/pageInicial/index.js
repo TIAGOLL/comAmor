@@ -2,14 +2,16 @@ import imgCard1 from '../../assets/imagens/foto-noticiascomamor1.jpg';
 import imgCard2 from '../../assets/imagens/foto-noticiascomamor2.jpg';
 import imgCard3 from '../../assets/imagens/foto-noticiascomamor3.jpg';
 import imgCard4 from '../../assets/imagens/foto-noticiascomamor4.jpg';
-import diaDeCampo from '../../assets/imagens/diadecampo.jpeg';
+import diaDeCampoimg from '../../assets/imagens/diadecampo.jpeg';
 import Banner1 from '../../assets/imagens/banner1.png';
 import Banner2 from '../../assets/imagens/banner2.png';
 
 import CardNoticias from '../../components/cardsNoticias'
 import ContainerCard from '../../components/containerCard'
 
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Carousel, Form, Button, Alert, Table } from 'react-bootstrap';
+import { Centralizar, Imagem, Titulo } from './style';
+import '../../components/header'
 
 function PageInicial() {
     return (<>
@@ -18,30 +20,23 @@ function PageInicial() {
             <Container>
                 <Row>
                     <Col md={12} className="capa">
-                        <div id="carousel-coamo" className="carousel slide" data-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active imagem">
-                                    <img src={Banner1} alt="Banner Novidades da coamo" className="img-fluid" />
-                                    <a className="button-nav btn-banner" data-scroll-to="login">
-                                        <span className="span-nav">Saiba mais</span>
-                                    </a>
-                                </div>
-
-                                <div className="carousel-item imagem">
-                                    <img src={Banner2} alt="Banner 2" className="img-fluid" />
-                                    <a className="button-nav btn-banner" href="#">
-                                        <span className="span-nav">Saiba mais</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="#carousel-coamo" className="carousel-control-prev" data-slide="prev">
-                                <i className="fas fa-angle-left fa-3x"></i>
-                            </a>
-
-                            <a href="#carousel-coamo" className="carousel-control-next" data-slide="next">
-                                <i className="fas fa-angle-right fa-3x"></i>
-                            </a>
-                        </div>
+                        <Carousel>
+                            <Carousel.Item>
+                                <Imagem
+                                    className="d-block w-100"
+                                    src={Banner1}
+                                    alt="Novidades para vendedores"
+                                    sty
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <Imagem
+                                    className="d-block w-100"
+                                    src={Banner2}
+                                    alt="Condições especiais para semeadoras de inverno"
+                                />
+                            </Carousel.Item>
+                        </Carousel>
                     </Col>
                 </Row>
             </Container>
@@ -56,142 +51,134 @@ function PageInicial() {
                             <Row>
                                 <Col md={3}>
                                     <CardNoticias img={imgCard1} tittle={'Aplicativo Coamo alcança 18 mil cooperados'} btnText={'Saiba mais'} />
-                                    
+
                                 </Col>
                                 <Col md={3}>
                                     <CardNoticias img={imgCard2} tittle={'Dia Nacional da Conservação de Solo'} btnText={'Saiba mais'} />
-                                    
+
                                 </Col>
                                 <Col md={3}>
                                     <CardNoticias img={imgCard3} tittle={'Coamo investe 250 Milhões em armazéns'} btnText={'Saiba mais'} />
-                                    
+
                                 </Col>
                                 <Col md={3}>
-                                    <CardNoticias img={imgCard4} tittle={'Agora a revista coamo esta na versão digital'} btnText={'Conferir'} />
-                                    
+                                    <CardNoticias img={imgCard4} tittle={'Agora a revista coamo esta na versão digital'} btnText={'Saiba mais'} />
+
                                 </Col>
                             </Row>
                         </ContainerCard>
                     </Col>
 
                     <Col md={4}>
-                        <div className="container-card container-fluid" style={{ padding: '10px;' }}>
-                            <div className="titulo">
-                                <h4>Login</h4>
-                            </div>
+                        <ContainerCard>
+                            <Titulo>Login</Titulo>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                    <Form.Label>E-mail</Form.Label>
+                                    <Form.Control type="email" placeholder="teste@comamor.com" />
+                                </Form.Group>
 
-                            <div>
-                                <form className="form-login" data-scroll="login">
-                                    <div className="mb-3">
-                                        <label>
-                                            <h5>Login</h5>
-                                        </label>
-                                        <input type="email" className="form-control" id="email" name="email"
-                                            placeholder="teste@comamor.com" />
-                                    </div>
-                                    <div className="mb-3">
-                                        <label>
-                                            <h5>Senha</h5>
-                                        </label>
-                                        <input type="password" className="form-control" id="senha" name="senha"
-                                            placeholder="123" />
-                                    </div>
-                                    <h5 id="output-login"><br /></h5>
-                                    <div style={{ textAlign: 'center' }}>
-                                        <input className="btn btn-primary" id="btn-login" onclick="logar()" value="Logar"
-                                            readonly />
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                                <Form.Group className="mb-3" controlId="formBasicPassword">
+                                    <Form.Label>Password</Form.Label>
+                                    <Form.Control type="password" placeholder="Password" />
+                                </Form.Group>
+                                <Alert.Link href="" style={{ fontWeight: 'normal' }}>Esqueci minha senha</Alert.Link>
+                                <Centralizar style={{ padding: '30px 0px' }}>
+                                    <Button variant="primary" type="submit" style={{ padding: '7px 100px', fontWeight: 'bold', fontSize: 17 }}>
+                                        Logar
+                                    </Button>
+                                </Centralizar>
+                            </Form>
+                        </ContainerCard>
                     </Col>
                 </Row>
             </Container>
         </section>
 
         <section>
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-8">
-                        <div className="container-card ">
-                            <div className="titulo">
+            <Container>
+                <Row>
+                    <Col md={8}>
+                        <ContainerCard>
+                            <Titulo>
                                 <h4>Variação do preço</h4>
-                            </div>
+                            </Titulo>
 
-                            <div id="grafico-preco" data-scroll="preco-dia">
+                            <Centralizar id="grafico-preco">
                                 <iframe loading="lazy"
-                                    style={{ position: 'absolute;', width: '100%;', height: '100%;', top: '0;', left: '0;', border: 'none;', padding: '0;', margin: '0;' }}
                                     className='img-graficoPreco'
                                     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFfKJYxltY&#x2F;view?embed"></iframe>
-                            </div>
-                        </div>
-                    </div>
+                            </Centralizar>
+                        </ContainerCard>
+                    </Col>
 
                     <Col md={4}>
-                        <div className="container-card">
-                            <div className="titulo">
+                        <ContainerCard>
+                            <Titulo>
                                 <h4>Preço do dia</h4>
-                            </div>
+                            </Titulo>
 
-                            <div id="conteudo-preco">
-                                <table className="table table-striped table-condensed">
+                            <Centralizar style={{ padding: '20px' }}>
+                                <Table striped bordered hover>
                                     <thead>
                                         <tr>
-                                            <th className="alinhamento-1">Produto</th>
-                                            <th className="alinhamento-1">Data</th>
-                                            <th className="alinhamento-1">R$</th>
+                                            <th>Produto</th>
+                                            <th>Data</th>
+                                            <th>R$</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <td className="alinhamento-1">Soja</td>
-                                            <td className="alinhamento-2">04/04/2023 13:33</td>
-                                            <td className="alinhamento-1">R$&nbsp;141,00</td>
+                                            <td>Soja</td>
+                                            <td>04/04/2023 13:33</td>
+                                            <td>R$&nbsp;141,00</td>
                                         </tr>
 
                                         <tr>
-                                            <td className="alinhamento-1">Milho</td>
-                                            <td className="alinhamento-2">04/04/2023 13:33</td>
-                                            <td className="alinhamento-1">R$&nbsp;69,00</td>
+                                            <td>Milho</td>
+                                            <td>04/04/2023 13:33</td>
+                                            <td>R$&nbsp;69,00</td>
                                         </tr>
 
                                         <tr>
-                                            <td className="alinhamento-2">Trigo Pão Tipo 1</td>
-                                            <td className="alinhamento-2">04/04/2023 13:33</td>
-                                            <td className="alinhamento-1">R$&nbsp;84,00</td>
+                                            <td>Trigo Pão Tipo 1</td>
+                                            <td>04/04/2023 13:33</td>
+                                            <td>R$&nbsp;84,00</td>
                                         </tr>
 
                                         <tr>
-                                            <td className="alinhamento-1">Café</td>
-                                            <td className="alinhamento-2">04/04/2023 13:33</td>
-                                            <td className="alinhamento-1">R$&nbsp;16,72</td>
+                                            <td>Café</td>
+                                            <td>04/04/2023 13:33</td>
+                                            <td>R$&nbsp;16,72</td>
                                         </tr>
                                     </tbody>
-                                </table>
-                            </div>
-                        </div>
+                                </Table>
+                            </Centralizar>
+                        </ContainerCard>
                     </Col>
-                </div>
-            </div>
+                </Row>
+            </Container>
         </section>
+
+
         <section>
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="container-card">
-                            <div className="titulo">
+            <Container>
+                <Row>
+                    <Col md={12}>
+                        <ContainerCard>
+                            <Titulo>
                                 <h4>Resumo do Último Dia de Campo</h4>
-                            </div>
-                            <div data-scroll="dia-de-campo">
-                                <img className="img-fluid" width="1089px" height="2px"
-                                    src={diaDeCampo} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </Titulo>
+                            <Centralizar style={{ padding: '20px' }} data-scroll="dia-de-campo">
+                                <Imagem fluid width={'1089px'}
+                                    src={diaDeCampoimg} alt='Imagem do dia de campo' />
+                            </Centralizar>
+                        </ContainerCard>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     </>
     )
