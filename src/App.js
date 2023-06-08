@@ -1,15 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Header from './components/header';
-import Login from './pages/login';
+import WorkAssistantPage from './pages/workAssistantPage';
 import Footer from './components/footer';
 import PageInicial from './pages/pageInicial';
+import PageLogin from './pages/pageLogin';
 
 function App() {
 
     return (
       <>
         <Header />
-          <PageInicial />
+          <PageLogin />
         <Footer />
       </>
     );

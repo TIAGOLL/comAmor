@@ -13,6 +13,7 @@ export const Titulo = styled.div`
     margin: 0px 15%;
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 10px;
 `
 
 export const Centralizar = styled.div`

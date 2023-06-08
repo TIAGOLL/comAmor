@@ -163,7 +163,6 @@ function PageInicial() {
 
 
         <section>
-
             <Container>
                 <Row>
                     <Col md={12}>
@@ -171,8 +170,8 @@ function PageInicial() {
                             <Titulo>
                                 <h4>Resumo do Último Dia de Campo</h4>
                             </Titulo>
-                            <Centralizar style={{ padding: '20px' }} data-scroll="dia-de-campo">
-                                <Imagem fluid width={'1089px'}
+                            <Centralizar style={{ padding: '20px 10px 10px 10px' }} data-scroll="dia-de-campo">
+                                <Imagem fluid width={'100%'}
                                     src={diaDeCampoimg} alt='Imagem do dia de campo' />
                             </Centralizar>
                         </ContainerCard>

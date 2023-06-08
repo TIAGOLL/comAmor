@@ -9,8 +9,8 @@ function Header() {
 
     return (
         <Navbar id='navbar-header' navbar navbar-expand-md fixed-top navbar-header>
-            <Container fluid>
-                <Navbar.Brand href='index.html' style={{paddingLeft: '300px'}}>
+            <Container fluid style={{paddingLeft: '40px', paddingRight: '40px'}}>
+                <Navbar.Brand href='index.html'>
                     <Imagem src={Logo} alt='Logo Coamo' width='250px' />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -22,7 +22,7 @@ function Header() {
                     />
                 </Navbar.Collapse>
                 <Centralizar>
-                    <ul className='ml-auto' style={{paddingRight: '250px'}}>
+                    <ul className='ml-auto'>
                         <li className='nav-item liheader'>
                             <Button className='button-nav'> <span className='span-nav'>Preços do
                                 dia</span>
