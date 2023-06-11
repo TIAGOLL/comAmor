@@ -1,16 +1,17 @@
-import { Col, Container, FloatingLabel, Form, Row, Button, Alert, Navbar } from "react-bootstrap";
+import { Col, Container, FloatingLabel, Form, Row, Button, Alert } from "react-bootstrap";
 import ContainerCard from './../../components/containerCard/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Titulo } from "../pageInicial/style";
 import { useState } from "react";
 import { login } from "../../utils/loginValidation";
 
-export default function PageLogin() {
 
+export default function PageLogin(props) {
+    const delay = 2000;
+
+    //hooks de controle do login
     const [successValidationCod, setSuccessValidationCod] = useState(null)
-
     const [isRequest, setIsRequest] = useState(false)
-
     const [error, setError] = useState(null)
 
     const loginValidation = () => {
@@ -22,6 +23,7 @@ export default function PageLogin() {
         login(values)
         .then((successValidationCod) => {
             setSuccessValidationCod(successValidationCod)
+            setTimeout(() => {props.toPageWorkAssistant(true)}, delay)
         })
         .catch((error) => {
             setError(error)

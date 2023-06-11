@@ -4,7 +4,7 @@ export function login({ email, password }) {
     return new Promise((resolve, reject) => {
       setTimeout(function () {
         if (password === '123' && !!email) {
-          resolve({message: 'Login efetuado com sucesso.' });
+          resolve({message: 'Login efetuado com sucesso.' })
         } else {
           reject({ message: 'Login ou senha inválidos.' });
         }

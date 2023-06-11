@@ -12,8 +12,14 @@ import ContainerCard from '../../components/containerCard'
 import { Container, Row, Col, Carousel, Form, Button, Alert, Table } from 'react-bootstrap';
 import { Centralizar, Imagem, Titulo } from './style';
 import '../../components/header'
+import { useState } from 'react';
 
-function PageInicial() {
+function PageInicial(props) {
+
+    const toPageInicialProps = props.toPageInicial
+
+    const [toPageInicial, setPageInicial] = useState(toPageInicialProps)
+
     return (<>
 
         <section home d-flex>

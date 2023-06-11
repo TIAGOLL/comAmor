@@ -7,8 +7,13 @@
 
 html, 
 body {
-  height: 100%;
-  width: 100%;
+  height: 100% !important;
+  width: 100% !important;
+  flex-direction: column !important;
+  display: flex !important;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 p,
@@ -171,9 +176,11 @@ form.form-login {
 
 footer {
   background-color: var(--color-principal);
-  position: fixed;
-  bottom:0;
-  width: 100%;
+  flex-shrink: 0 !important;
+  height: 290px;
+  text-align: center;
+  justify-content: center;
+  
 }
 
 a {

@@ -9,7 +9,7 @@ import { Imagem } from './../../pages/pageInicial/style';
 function Footer() {
     return (
         <footer>
-            <Container>
+            <Container style={{paddingTop: '50px'}}>
                 <Row>
                     <Col md={3}>
                         <nav>

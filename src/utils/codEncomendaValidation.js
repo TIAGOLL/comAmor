@@ -11,4 +11,3 @@ export function validationCod(codEncomenda) {
       }, delay);
     });
   }
-  
