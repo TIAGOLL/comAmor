@@ -1,5 +1,4 @@
 import { Button, Card } from 'react-bootstrap'
-import ContainerCard from '../containerCard';
 
 
 function CardsNoticias(props) {
@@ -7,7 +6,7 @@ function CardsNoticias(props) {
         <Card style={{ border: 'none', boxShadow: '1px 1px 10px #3e3f3f' }}>
             <Card.Img src={props.img} width={'220px'} height={'170px'} />
             <Card.Body style={{ padding: '10px' }}>
-                <Card.Title style={{ color: 'white', webkitboxorient: 'vertical', webkitlineclamp: '2', overflow: 'hidden;', textOverflow: 'ellipsis', fontSize: '15px'}}>
+                <Card.Title className='text-light' style={{ webkitboxorient: 'vertical', webkitlineclamp: '2', overflow: 'hidden;', textOverflow: 'ellipsis', fontSize: '15px'}}>
                     {props.tittle}
                 </Card.Title>
                 <Card.Text>

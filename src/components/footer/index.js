@@ -9,7 +9,7 @@ import { Imagem } from './../../pages/pageInicial/style';
 function Footer() {
     return (
         <footer>
-            <Container style={{paddingTop: '50px'}}>
+            <Container style={{paddingTop: '50px', height: '100%'}}>
                 <Row>
                     <Col md={3}>
                         <nav>
@@ -21,21 +21,21 @@ function Footer() {
                         <ul className='ul-media'>
                             <li>
                                 <a target='_blank' href='https://www.facebook.com/coamo.agroindustrial.cooperativa'
-                                    style={{ color: 'white' }}><Imagem src={logoFacebook}
+                                    className='text-light' rel='noreferrer'><Imagem src={logoFacebook}
                                         className='logoMedia' /><strong> Facebook</strong></a>
                             </li>
                             <li>
                                 <a target='_blank' href='https://www.instagram.com/coamocooperativa'
-                                    style={{ color: 'white' }}><Imagem src={logoInstagram}
+                                    className='text-light' rel='noreferrer'><Imagem src={logoInstagram}
                                         className='logoMedia' /><strong> Instagram</strong></a>
                             </li>
                             <li>
-                                <a target='_blank' href='https://www.linkedin.com/company/coamo-agroindustrial-cooperativa/mycompany/' style={{ color: 'white' }}><Imagem src={logoLinkedin}
+                                <a target='_blank' href='https://www.linkedin.com/company/coamo-agroindustrial-cooperativa/mycompany/' className='text-light' rel='noreferrer'><Imagem src={logoLinkedin}
                                     className='logoMedia' /><strong> Linkedin</strong></a>
                             </li>
 
                             <div className='direitos-reservados'>
-                                <p style={{ color: 'white', paddingTop: '50px' }}><strong>Todos os direitos reservados.</strong></p>
+                                <p className='text-light' style={{ paddingTop: '50px' }}><strong>Todos os direitos reservados.</strong></p>
                             </div>
                         </ul>
                     </Col>
